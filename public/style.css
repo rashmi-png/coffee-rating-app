@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5eee6;
+    color: #3e2723;
+}
+
+header {
+    background: #5d4037;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.coffee-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.coffee-card:hover {
+    transform: translateY(-5px);
+}
+
+.coffee-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.coffee-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.coffee-card p {
+    color: #6d4c41;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.vote-count {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.vote-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #795548;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.vote-btn:hover {
+    background: #5d4037;
+}
+
+.vote-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.leaderboard {
+    margin-top: 50px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+.rank {
+    font-weight: bold;
+}
